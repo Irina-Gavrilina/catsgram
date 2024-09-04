@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 @SpringBootApplication
-public class CatsgramApplication {
+public class CatsgramApp {
     public static void main(String[] args) {
         final Gson gson = new Gson();
         final Scanner scanner = new Scanner(System.in);
@@ -21,6 +21,6 @@ public class CatsgramApplication {
         } catch (JsonSyntaxException exception) {
             System.out.println("Был введён некорректный JSON");
         }
-        SpringApplication.run(CatsgramApplication.class, args);
+        SpringApplication.run(CatsgramApp.class, args);
     }
 }
